@@ -9,12 +9,22 @@
 
 /* shared style */
 
-body{
+body {
     font-family: "Work Sans", sans-serif;
 }
 
 .d-flex {
     display: flex;
+}
+
+.primary-btn>button {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 15px;
+    border: none;
 }
 
 
@@ -26,7 +36,6 @@ body{
 .header-section {
     background-color: rgba(255, 144, 14, 0.1);
     max-width: 1920px;
-    ;
 }
 
 .nav-title>h2 {
@@ -76,4 +85,34 @@ body{
     .nav-title {
         padding-bottom: 30px;
     }
+}
+
+/* brand section start here */
+
+.brand-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.brand-info>h2 {
+    color: rgb(19, 19, 19);
+    font-size: 3.9rem;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.brand-info>p {
+    max-width: 868px;
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.brand-img>img{
+    width: 100%;
+    border-radius: 8px;
+    background: url(group-three-modern-architects);
 }
