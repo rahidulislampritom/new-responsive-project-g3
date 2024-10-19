@@ -17,14 +17,20 @@ body {
     display: flex;
 }
 
-.primary-btn>button {
+.primary-btn {
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-radius: 8px;
     background: rgb(255, 144, 14);
     padding: 15px;
     border: none;
+}
+
+.main-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 75px;
 }
 
 
@@ -111,8 +117,77 @@ body {
     font-weight: 400;
 }
 
-.brand-img>img{
+.brand-img>img {
     width: 100%;
     border-radius: 8px;
     background: url(group-three-modern-architects);
+}
+
+/* main tag started here */
+
+/* features section started here */
+.feature-section {
+    width:100%;
+}
+
+.feature-container {
+    align-items: center;
+    justify-content: center;
+    gap: 73px;
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.feature-info {
+    flex-direction: column;
+    gap: 28px;
+}
+
+.feature-info>h2 {
+    font-family: Work Sans;
+    font-size: 2.9rem;
+    font-weight: 700;
+
+}
+
+.feature-info>p {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 537px;
+
+}
+
+#quick {
+    color: rgb(114, 114, 114);
+    font-weight: 500;
+}
+
+#features {
+    color: rgb(255, 144, 14);
+}
+
+/* media query features section started here  */
+
+@media screen and (max-width:576px){
+    .feature-container{
+        flex-direction: column;
+        gap:10px
+    }
+    .feature-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-info{
+        text-align: center;
+        padding: 10px;
+    }
+    .feature-info>p{
+        width: fit-content;
+    }
+
+   
 }
