@@ -294,6 +294,7 @@ body {
 @media screen and (max-width:576px) {
     .love-conteiner {
         flex-direction: column;
+        gap: 60px;
     }
 
     .love-img img {
@@ -304,6 +305,11 @@ body {
         margin: -50px 0px 0px 60px;
 
     }
+
+    .love-section {
+        margin-top: 60ppx;
+    }
+    
 }
 
 /* some facts section started here */
@@ -345,7 +351,7 @@ body {
 
 
     .facts-section {
-        margin-top: 80px;
+        margin-top: 60px;
     }
 }
 
@@ -395,6 +401,9 @@ body {
         padding: 15px;
         gap: 15px;
     }
+    .card-section {
+        margin-top: 50px;
+    }
 }
 
 /* Our Sponsors section started here */
@@ -426,10 +435,11 @@ body {
 
 }
 
-.sponsor-img {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* gap: 120px; */
+.spotify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .sponsor-img img {
@@ -441,19 +451,61 @@ body {
 /* media query of Our Sponsors section started here */
 
 @media screen and (max-width:576px) {
-     .sponsor-img {
-        grid-template-columns: repeat(1,1fr);
-    } 
-    .sponsor-img img{
+
+.sponsor-section{
+    margin-top: 50px;
+}
+
+    .sponsor-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponsor-img img {
         text-align: center;
         align-items: center;
     }
-    .spotify{
+
+    .spotify {
         flex-direction: column;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
         gap: 30px;
+    }
+}
+
+/* footer section start from here */
+.footer-section {
+    max-width: 1440px;
+    ;
+    margin-top: 110px;
+    background-color: rgba(255, 244, 231, 1.00);
+    margin: 0 auto;
+}
+
+.footer-subtitle {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    padding: 38px 0px 39px 0;
+}
+
+
+.footer-subtitle>p {
+    color: rgb(66, 66, 66);
+   
+    font-size: 1.2rem;
+    font-weight: 350;
+    
+}
+
+/* media query of footer section start from here */
+
+@media screen and (max-width:576px) {
+    .footer-subtitle>p{
+        text-align: center;
     }
 }
