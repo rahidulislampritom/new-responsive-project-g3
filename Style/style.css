@@ -307,15 +307,15 @@ body {
 }
 
 /* some facts section started here */
-.facts-section{
-    margin-top: 150px ;
+.facts-section {
+    margin-top: 150px;
 }
 
 .facts-info {
     flex-direction: column;
     justify-content: center;
     gap: 24px;
-    
+
 }
 
 .facts-title {
@@ -324,7 +324,7 @@ body {
     font-weight: 700;
 }
 
-.facts-perag{
+.facts-perag {
     color: rgb(114, 114, 114);
     font-size: 1rem;
     font-weight: 400;
@@ -332,18 +332,67 @@ body {
 
 /* media query of some facts section started here */
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
+
     .facts-title,
-    .facts-perag{
+    .facts-perag {
         padding: 15px;
     }
-    .facts-perag{
-        margin-top:-20px ;
+
+    .facts-perag {
+        margin-top: -20px;
     }
-    .facts-info {
-        /* gap: 2px; */
+ 
+
+    .facts-section {
+        margin-top: 80px;
     }
-    .facts-section{
-        margin-top: 80px ;
+}
+
+/* card section started here */
+
+.card-section {
+    margin-top: 100px;
+}
+
+.card-container {
+    justify-content: space-around;
+}
+
+.card {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    padding: 45px 59px 36px 35px;
+    background-color: rgb(255, 255, 255);
+    ;
+
+}
+
+.card-no>h2 {
+    color: rgb(66, 66, 66);
+    font-size: 2.8rem;
+    font-weight: 600;
+
+}
+
+.card-perag>p {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* media query of card section started here */
+
+@media screen and (max-width:576px) {
+    .card-container{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
     }
 }
