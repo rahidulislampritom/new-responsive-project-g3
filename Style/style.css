@@ -292,14 +292,58 @@ body {
 /* media query of love section start from here */
 
 @media screen and (max-width:576px) {
-    .love-conteiner{
+    .love-conteiner {
         flex-direction: column;
     }
-    .love-img img{
+
+    .love-img img {
         max-width: 100%;
     }
-    .love-btn{
+
+    .love-btn {
         margin: -50px 0px 0px 60px;
 
+    }
+}
+
+/* some facts section started here */
+.facts-section{
+    margin-top: 150px ;
+}
+
+.facts-info {
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    
+}
+
+.facts-title {
+    color: rgb(19, 19, 19);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.facts-perag{
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* media query of some facts section started here */
+
+@media screen and (max-width:576px){
+    .facts-title,
+    .facts-perag{
+        padding: 15px;
+    }
+    .facts-perag{
+        margin-top:-20px ;
+    }
+    .facts-info {
+        /* gap: 2px; */
+    }
+    .facts-section{
+        margin-top: 80px ;
     }
 }
